@@ -99,7 +99,7 @@ Resources:
       Handler: index.lambda_handler
       MemorySize: 128
       Role: !GetAtt QuickStartStackMakerLambdaRole.Arn
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 900
       Code:
         ZipFile: |
@@ -243,7 +243,7 @@ Resources:
     Properties:
       Handler: index.lambda_handler
       MemorySize: 128
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 900
       Role: !GetAtt DynamicPipelineCleanupLambdaRole.Arn
       Environment:
@@ -403,7 +403,7 @@ Resources:
     Properties:
       Handler: index.lambda_handler
       MemorySize: 128
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 900
       Role: !GetAtt DynamicPipelineMakerLambdaRole.Arn
       Environment:
@@ -539,7 +539,7 @@ Resources:
     Properties:
       Handler: index.handler
       Role: !GetAtt CleanUpBucketsLambdaRole.Arn
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 30
       Code:
         ZipFile: |
@@ -594,7 +594,7 @@ Resources:
     Properties:
       Handler: index.handler
       Role: !GetAtt CodecommitCredentialsLambdaRole.Arn
-      Runtime: python3.6
+      Runtime: python3.9
       Timeout: 30
       Code:
         ZipFile: |
