@@ -104,7 +104,7 @@ Resources:
       Code:
         ZipFile: |
           import os, boto3, json, signal, traceback
-          from botocore.vendored import requests
+          import requests
           from botocore.exceptions import ClientError
 
           def get_cfn_parameters(e):
